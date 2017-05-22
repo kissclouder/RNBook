@@ -147,13 +147,13 @@ class Dinner extends Component {
 class NeedState extends Component {
     constructor(props) {
     super(props);
-    this.state = { text: '' };
+    this.state = { text: '期待会发生的事情' };
   }
     render() {
         return (
             <View>
                 <Text onPress={() => { this.setState({ text: '状态变了' })} }>点我！</Text>
-                <Text>期待会发生的事情</Text>
+                <Text>{this.state.text}</Text>
             </View>
         )
     }
